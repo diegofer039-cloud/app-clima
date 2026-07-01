@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App del Clima</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1 class="titulo">App del Clima</h1>
+
+    <div class="buscador">
+      <input type="text" id="inputCiudad" placeholder="Ingresa una ciudad..." autofocus>
+      <button id="btnBuscar">Buscar</button>
+    </div>
+
+    <div id="resultado" class="tarjeta-clima oculto">
+      <div class="clima-principal">
+        <img id="iconoClima" src="" alt="ícono del clima">
+        <span id="temperatura" class="temperatura"></span>
+      </div>
+      <p id="descripcion" class="descripcion"></p>
+      <div class="detalles">
+        <div class="detalle">
+          <span class="detalle-label">Humedad</span>
+          <span id="humedad" class="detalle-valor"></span>
+        </div>
+        <div class="detalle">
+          <span class="detalle-label">Viento</span>
+          <span id="viento" class="detalle-valor"></span>
+        </div>
+      </div>
+    </div>
+
+    <p id="error" class="error oculto"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

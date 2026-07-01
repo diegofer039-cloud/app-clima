@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #0f1117;
+  color: #e1e4e8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 420px;
+  padding: 2rem;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #58a6ff, #bc8cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.buscador {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.buscador input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  color: #e1e4e8;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.buscador input:focus {
+  border-color: #58a6ff;
+}
+
+.buscador button {
+  padding: 0.75rem 1.5rem;
+  background-color: #238636;
+  color: #fff;
+  border: 1px solid #2ea043;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.buscador button:hover {
+  background-color: #2ea043;
+}
+
+.tarjeta-clima {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.clima-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.clima-principal img {
+  width: 80px;
+  height: 80px;
+}
+
+.temperatura {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.descripcion {
+  color: #8b949e;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+
+.detalles {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border-top: 1px solid #30363d;
+  padding-top: 1.25rem;
+}
+
+.detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.detalle-label {
+  color: #8b949e;
+  font-size: 0.85rem;
+}
+
+.detalle-valor {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.error {
+  background-color: #3d1f1f;
+  border: 1px solid #d73a4a;
+  color: #f85149;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.oculto {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    padding: 1.5rem;
+  }
+
+  .temperatura {
+    font-size: 2.8rem;
+  }
+
+  .detalles {
+    gap: 1.5rem;
+  }
+}
